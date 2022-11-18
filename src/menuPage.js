@@ -1,4 +1,7 @@
 import tagMaker from "./tagMaker";
+import Icon from './logo.png';
+import Background from './shrimp-portrait.jpg';;
+
 export default function menuPage() {
   function header() {
     const myIcon = new Image();
@@ -28,7 +31,7 @@ export default function menuPage() {
     return header;
   }
   function main() {  
-
+    console.log('menu page');
     const leftSide = tagMaker('div', 'left-main');
     const myBackground = new Image();
     myBackground.src = Background;

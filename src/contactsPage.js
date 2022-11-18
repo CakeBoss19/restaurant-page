@@ -1,4 +1,7 @@
 import tagMaker from "./tagMaker";
+import Icon from './logo.png';
+import Background from './shrimp-portrait.jpg';
+
 export default function contactsPage() {  
   function header() {
     const myIcon = new Image();
@@ -28,7 +31,7 @@ export default function contactsPage() {
     return header;
   }
   function main() {  
-
+    console.log('contacts page');
     const leftSide = tagMaker('div', 'left-main');
     const myBackground = new Image();
     myBackground.src = Background;

@@ -1,18 +1,22 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'none',
   entry: {
     index: './src/index.js',
-    home: './src/homePage.js',
-    menu: './src/menupage.js',
-    contact: './src/contactsPage.js',
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Restaurant Site',
+      template: './src/template.html',
+    })
+  ],
   devServer: {
     static: './dist',
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
