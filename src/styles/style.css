@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Nokora';
+  src: url('../fonts/nokora-regular-webfont.woff2') format('woff2'),
+    url('../fonts/nokora-regular-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+html, body, * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nokora';
+  font-size: 1vw;
+  box-sizing: border-box;
+}
+
+#content {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(42, 53, 51);
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+header {
+  padding: 4rem;
+  display: flex;
+  height: 12rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.tabs {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  height: 100%;
+}
+
+button {
+  border-style: none;
+  color: white;
+  background-color: transparent;
+  flex: 1;
+  height: 100%;
+  background-color: rgb(38, 75, 64);;
+}
+
+button:hover {
+  background-color: rgba(38, 75, 64, 0.479);;
+  cursor: pointer;
+}
+
+main {
+  height: 100%;
+}
+
+footer {
+  height: 8rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  justify-content: center;
+}
