@@ -26,8 +26,7 @@ function mainElement() {
 };
 
 function main(domElement) {
-  let firstChild = domElement.firstElementChild;
-  firstChild.after(mainElement());
+  domElement.firstElementChild.after(mainElement());
 }
 
 export { main }

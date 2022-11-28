@@ -11,6 +11,10 @@ export default function header() {
   const menuBtn = tagMaker('button', 'menu-button', 'Menu');
   const contactsBtn = tagMaker('button', 'contact-button', 'Contacts');
 
+  homeBtn.dataset.id = 0;
+  menuBtn.dataset.id = 1;
+  contactsBtn.dataset.id = 2;
+
   const tabs = tagMaker('div', 'tabs');
   tabs.appendChild(homeBtn);
   tabs.appendChild(menuBtn);

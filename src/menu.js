@@ -7,7 +7,7 @@ function item(name, price, id){
     price: price,
     id: id,
 
-    createDomElement() {
+    createDomElement(destination) {
       const name = tagMaker('li', 'item-name', this.name);
       const price = tagMaker('li', 'item-price', this.price);
     
@@ -15,7 +15,7 @@ function item(name, price, id){
       menuItem.appendChild(name);
       menuItem.appendChild(price);
       
-      return menuItem;
+      destination.appendChild(menuItem);
     }
   }
 }
@@ -40,5 +40,27 @@ function getList(){
   return menuArray;
 }
 
+function mainElement() {  
+  const appMenu = tagMaker('ul', 'app-menu');
+  const mainMenu = tagMaker('ul', 'main-menu');
+  
+  getList().forEach((menuItem) => {
+    if(menuItem.id == 'app') {
+      menuItem.createDomElement(appMenu);
+    } else {
+      menuItem.createDomElement(mainMenu);
+    }
+  });
 
-export { getList };
+  const main = tagMaker('main');
+  main.appendChild(appMenu);
+  main.appendChild(mainMenu);
+
+  return main;
+}
+
+function main(domElement) {
+  domElement.firstElementChild.after(mainElement());
+}
+
+export { main };
