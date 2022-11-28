@@ -14,6 +14,8 @@ console.log(btnsArray);
 btnsArray.forEach(button => {
   console.log(button);
   });
+
+  
 // console.log(homeBtn);
 
 // homeBtn.addEventListener('click', () => { 
