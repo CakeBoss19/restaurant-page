@@ -1,16 +1,17 @@
 import "./styles/practice-style.css";
 import header from "./header";
 import footer from "./footer";
-import homePage from "./homePage";
+import * as Home from "./home";
 import menuPage from "./menuPage";
 import * as Menu from "./menu";
 import contactsPage from "./contactsPage";
 
+const content = document.getElementById('content');
+content.appendChild(header());
+content.appendChild(footer());
+
 window.addEventListener('load', (e) => {
-  const content = document.getElementById('content');
-  content.appendChild(header());
-  content.appendChild(homePage());
-  content.appendChild(footer());
+  Home.main(content);
 });
 
 console.log(content);
