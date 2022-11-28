@@ -31,7 +31,6 @@ export default function menuPage() {
     return header;
   }
   function main() {  
-    console.log('menu page');
     const appMenu = tagMaker('ul', 'app-menu');
     const mainMenu = tagMaker('ul', 'main-menu');
     

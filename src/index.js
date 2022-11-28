@@ -1,4 +1,6 @@
 import "./styles/practice-style.css";
+import header from "./header";
+import footer from "./footer";
 import homePage from "./homePage";
 import menuPage from "./menuPage";
 import * as Menu from "./menu";
@@ -6,9 +8,12 @@ import contactsPage from "./contactsPage";
 
 window.addEventListener('load', (e) => {
   const content = document.getElementById('content');
-  content.appendChild(menuPage());
+  content.appendChild(header());
+  content.appendChild(homePage());
+  content.appendChild(footer());
 });
 
+console.log(content);
 let buttons = document.getElementsByTagName('button');
 let btnsArray = Array.prototype.slice.call(buttons);
 btnsArray.forEach(button => {

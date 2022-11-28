@@ -3,28 +3,6 @@ import Icon from './logo.png';
 import Background from './shrimp-portrait.jpg';
 
 export default function homePage() {
-  function header() {
-    const myIcon = new Image();
-    myIcon.src = Icon;
-
-    const h1 = tagMaker('h1', false, 'Herrington\'s Harbor');
-
-    const homeBtn = tagMaker('button', 'home-button', 'Home');
-    const menuBtn = tagMaker('button', 'menu-button', 'Menu');
-    const contactsBtn = tagMaker('button', 'contact-button', 'Contacts');
-
-    const tabs = tagMaker('div', 'tabs');
-    tabs.appendChild(homeBtn);
-    tabs.appendChild(menuBtn);
-    tabs.appendChild(contactsBtn);
-
-    const header = tagMaker('header');
-    header.appendChild(myIcon);
-    header.appendChild(h1);
-    header.appendChild(tabs);
-
-    return header;
-  }
   function main() {  
     console.log('home page');
     const leftSide = tagMaker('div', 'left-main');
@@ -60,7 +38,6 @@ export default function homePage() {
 
   const homepage = tagMaker('div', 'home-page');
 
-  homepage.appendChild(header());
   homepage.appendChild(main());
   homepage.appendChild(footer());
 
