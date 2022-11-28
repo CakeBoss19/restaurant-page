@@ -1,21 +1,26 @@
 // This will be a menu module that contains all variables to produce and distribute menu object information.
-
+import tagMaker from "./tagMaker";
 
 function item(name, price, id){
   return {
     name: name,
     price: price,
     id: id,
-    getName() {
-      return this.name;
-    },
-    getPrice() {
-      return this.price;
-    },
-  }
-};
 
-export function getMenu(){
+    createDomElement() {
+      const name = tagMaker('li', 'item-name', this.name);
+      const price = tagMaker('li', 'item-price', this.price);
+    
+      const menuItem = tagMaker('li', 'menu-item');
+      menuItem.appendChild(name);
+      menuItem.appendChild(price);
+      
+      return menuItem;
+    }
+  }
+}
+
+function getList(){
   let menuArray = [];
 
   let tomato = item('tomato', 4, 'app');
@@ -35,3 +40,5 @@ export function getMenu(){
   return menuArray;
 }
 
+
+export { getList };

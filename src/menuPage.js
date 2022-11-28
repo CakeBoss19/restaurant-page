@@ -1,6 +1,6 @@
 import tagMaker from "./tagMaker";
-import Icon from './logo.png';
-import Background from './shrimp-portrait.jpg';;
+import Icon from "./logo.png";
+import * as Menu from "./menu"
 
 export default function menuPage() {
   function header() {
@@ -32,33 +32,26 @@ export default function menuPage() {
   }
   function main() {  
     console.log('menu page');
-    const leftSide = tagMaker('div', 'left-main');
-    const myBackground = new Image();
-    myBackground.src = Background;
-
-    leftSide.appendChild(myBackground);
-
-    const rightSide = tagMaker('div', 'right-main');
-    const article = tagMaker('article');
-    article.innerHTML = 'Here at Herrington\'s Harbor, we make your actual dreams come true';
-
-    const orderLink = tagMaker('a');
-    orderLink.innerHTML = 'Place an order today!';
-    orderLink.href = '#';
-
-    rightSide.appendChild(article);
-    rightSide.appendChild(orderLink);
+    const appMenu = tagMaker('ul', 'app-menu');
+    const mainMenu = tagMaker('ul', 'main-menu');
+    
+    Menu.getList().forEach((menuItem) => {
+      if(menuItem.id == 'app') {
+        appMenu.appendChild(menuItem.createDomElement());
+      } else {
+        mainMenu.appendChild(menuItem.createDomElement());
+      } return
+    })
 
     const main = tagMaker('main');
-    main.appendChild(leftSide);
-    main.appendChild(rightSide);
+    main.appendChild(appMenu);
+    main.appendChild(mainMenu);
 
     return main;
   }
   function footer() {
 
-    const p = tagMaker('p', 'copyright');
-    p.innerHTML = 'Copyright @ 2022, Degrasso Digital. LLC';
+    const p = tagMaker('p', 'copyright', 'Copyright @ 2022, Degrasso Digital. LLC');
 
     const footer = tagMaker('footer');
     footer.appendChild(p);

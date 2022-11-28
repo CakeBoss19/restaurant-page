@@ -7,16 +7,11 @@ export default function homePage() {
     const myIcon = new Image();
     myIcon.src = Icon;
 
-    const h1 = tagMaker('h1');
-    h1.innerHTML = 'Herrington\'s Harbor';
+    const h1 = tagMaker('h1', false, 'Herrington\'s Harbor');
 
-    const homeBtn = tagMaker('button', 'home-button');
-    const menuBtn = tagMaker('button', 'menu-button');
-    const contactsBtn = tagMaker('button', 'contact-button');
-
-    homeBtn.innerHTML = 'Home';
-    menuBtn.innerHTML = 'Menu';
-    contactsBtn.innerHTML = 'Contacts';
+    const homeBtn = tagMaker('button', 'home-button', 'Home');
+    const menuBtn = tagMaker('button', 'menu-button', 'Menu');
+    const contactsBtn = tagMaker('button', 'contact-button', 'Contacts');
 
     const tabs = tagMaker('div', 'tabs');
     tabs.appendChild(homeBtn);
@@ -39,11 +34,9 @@ export default function homePage() {
     leftSide.appendChild(myBackground);
 
     const rightSide = tagMaker('div', 'right-main');
-    const article = tagMaker('article');
-    article.innerHTML = 'Here at Herrington\'s Harbor, we make your actual dreams come true';
+    const article = tagMaker('article', false, 'Where actual dreams come true');
 
-    const orderLink = tagMaker('a');
-    orderLink.innerHTML = 'Place an order today!';
+    const orderLink = tagMaker('a', false, 'Place an order today!');
     orderLink.href = '#';
 
     rightSide.appendChild(article);
@@ -57,8 +50,7 @@ export default function homePage() {
   }
   function footer() {
 
-    const p = tagMaker('p', 'copyright');
-    p.innerHTML = 'Copyright @ 2022, Degrasso Digital. LLC';
+    const p = tagMaker('p', 'copyright', 'Copyright @ 2022, Degrasso Digital. LLC');
 
     const footer = tagMaker('footer');
     footer.appendChild(p);

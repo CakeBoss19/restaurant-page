@@ -1,6 +1,10 @@
-export default function tagMaker(htmlTag, className) {
+export default function tagMaker(htmlTag, className, html) {
   let tag = document.createElement(htmlTag);
   if(className) {
     tag.classList.add(className);
-  } return tag;
+  }
+  if(html) {
+    tag.innerHTML = html;
+  }
+  return tag;
 };
