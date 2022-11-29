@@ -5,7 +5,7 @@ export default function header() {
   const myIcon = new Image();
   myIcon.src = Icon;
 
-  const h1 = tagMaker('h1', false, 'Herrington\'s Harbor');
+  const h1 = tagMaker('h1', 'text-5xl', 'Herrington\'s Harbor');
 
   const homeBtn = tagMaker('button', 'home-button', 'Home');
   const menuBtn = tagMaker('button', 'menu-button', 'Menu');
