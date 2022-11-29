@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_practice_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
 
       
       
@@ -43,12 +43,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_practice_style_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_practice_style_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_practice_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_practice_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -357,7 +357,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: 'Nokora';\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format('woff2'),\n    url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format('woff');\n  font-weight: 600;\n  font-style: normal;\n}\n\nhtml, body {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  font-family: 'Nokora';\n  font-size: 1em;\n  box-sizing: border-box;\n}\n\n#content {\n  min-width: 100vw;\n  min-height: 100vh;\n  background-color: rgb(209 255 247);\n  padding: 0 200px;\n}\n\nli {\n  list-style: none;\n}\n\nheader {\n  padding: 0 2rem;\n  display: flex;\n  height: 12rem;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n}\n\nheader > img {\n  color: red;\n  position: fixed;\n  width: 15rem;\n  left: -65px;\n  top: -70px;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\n.tabs {\n  width: 25%;\n  max-width: 350px;\n  height: 25%;\n  display: flex;\n  justify-content: space-between;\n  gap: 15px;\n\n}\n\nbutton {\n  border-style: none;\n  color: white;\n  flex: 1;\n  height: 100%;\n  max-width: 100px;\n  background-color: rgb(38, 75, 64);\n}\n\nbutton:hover {\n  background-color: rgba(38, 75, 64, 0.479);;\n  cursor: pointer;\n}\n\nmain {\n  flex: 1;\n  display: flex;\n  max-width: 100vw;\n}\n\n.left-main,\n.right-main {\n  margin: auto 2rem;\n  flex: 1;\n}\n\n.left-main > img {\n  width: 100%;\n}\n\nfooter {\n  height: 8rem;\n  width: 100%;\n  /* position: absolute; */\n  bottom: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.copyright {\n  font-size: 0.9rem;\n  justify-content: center;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: 'Nokora';\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format('woff2'),\n    url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format('woff');\n  font-weight: 600;\n  font-style: normal;\n}\n\nhtml, body {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  font-family: 'Nokora';\n  font-size: 1em;\n  box-sizing: border-box;\n}\n\n#content {\n  min-width: 100vw;\n  min-height: 100vh;\n  background-color: rgb(35, 44, 51);\n}\n\nli {\n  list-style: none;\n}\n\nheader {\n  background-color: #0E7C7B;\n  padding: 0 2rem;\n  display: flex;\n  height: 12rem;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n}\n\nheader > img {\n  position: fixed;\n  width: 15rem;\n  left: -65px;\n  top: -70px;\n}\n\n.tabs {\n  width: 25%;\n  max-width: 350px;\n  height: 25%;\n  display: flex;\n  justify-content: space-between;\n  gap: 15px;\n\n}\n\nbutton {\n  border-style: none;\n  color: white;\n  flex: 1;\n  height: 100%;\n  max-width: 100px;\n  background-color: rgb(38, 75, 64);\n}\n\nbutton:hover {\n  background-color: rgba(38, 75, 64, 0.479);;\n  cursor: pointer;\n}\n\nmain {\n  min-height: 80vh;\n  max-width: 100vw;\n  display: flex;\n  margin: auto;\n}\n\nmain.home {\n  flex: 1;\n  display: flex;\n}\n\nmain.menu {\n  flex-direction: column;\n}\n\n.left-main,\n.right-main {\n  margin: auto 2rem;\n  flex: 1;\n}\n\n.left-main > img {\n  width: 100%;\n}\n\nfooter {\n  background-color: #0E7C7B;\n  height: 8rem;\n  width: 100%;\n  bottom: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.copyright {\n  font-size: 0.9rem;\n  justify-content: center;\n}\n\n.app-menu,\n.main-menu,\nmain.contacts {\n  margin:  12px auto;\n  padding: 24px 0;\n  width: 50%;\n  text-align: center;\n  background-color: #17BEBB;\n  color: white;\n  display: flex;\n  flex-direction: column;\n  gap: 18px;\n}\n\n.menu-item {\n  background-color: #D4F4DD;\n  color: black;\n  display: flex;\n  justify-content: space-between;\n  width: 50%;\n  margin: auto;\n  padding: 1rem 3rem;\n}\n\n.menu-item > * {\n  padding: 1rem 3rem;\n}\n\nmain > h2 {\n  margin: auto;\n  color:#D4F4DD;\n  height: 5rem;\n  padding: 1rem;\n}\n\n.contact-list {\n  padding: 0;\n  display: flex;\n  flex-direction: column;\n  gap: 3rem;\n}\n\n.contact {\n  background-color: #0E7C7B;\n  width: 50%;\n  height: 6rem;\n  margin: auto;\n  display: flex;\n  flex-direction: column;\n}\n\n.name {\n  padding-top: 12px;\n  flex: 2;\n}\n.job,\n.email {\n  flex: 1;\n}\n\nmain.contacts {\n  display: block;\n  height: fit-content;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -647,7 +647,7 @@ function mainElement() {
   rightSide.appendChild(article);
   rightSide.appendChild(orderLink);
 
-  const main = (0,_tagMaker__WEBPACK_IMPORTED_MODULE_0__["default"])('main');
+  const main = (0,_tagMaker__WEBPACK_IMPORTED_MODULE_0__["default"])('main', 'home');
   main.appendChild(leftSide);
   main.appendChild(rightSide);
 
@@ -704,12 +704,12 @@ function item(name, price, id){
 function getList(){
   let menuArray = [];
 
-  let tomato = item('tomato', 4, 'app');
-  let steak = item('steak', 12, 'main');
-  let yogurt = item('yogurt', 3, 'app');
-  let milkshake = item('milkshake', 6, 'app');
-  let linguini = item('linguini', 14, 'main');
-  let fish = item('fish', 12, 'main');
+  let tomato = item('Tomato', 4, 'app');
+  let steak = item('Steak', 12, 'main');
+  let yogurt = item('Yogurt', 3, 'app');
+  let milkshake = item('Milkshake', 6, 'app');
+  let linguini = item('Linguini', 14, 'main');
+  let fish = item('Fish', 12, 'main');
 
   menuArray.push(tomato);
   menuArray.push(steak);
@@ -724,7 +724,9 @@ function getList(){
 function mainElement() {  
   const appMenu = (0,_tagMaker__WEBPACK_IMPORTED_MODULE_0__["default"])('ul', 'app-menu');
   const mainMenu = (0,_tagMaker__WEBPACK_IMPORTED_MODULE_0__["default"])('ul', 'main-menu');
-  
+  const starter = (0,_tagMaker__WEBPACK_IMPORTED_MODULE_0__["default"])('h2', false, 'Starters');
+  const mainm = (0,_tagMaker__WEBPACK_IMPORTED_MODULE_0__["default"])('h2', false, 'Main Course');
+
   getList().forEach((menuItem) => {
     if(menuItem.id == 'app') {
       menuItem.createDomElement(appMenu);
@@ -733,8 +735,10 @@ function mainElement() {
     }
   });
 
-  const main = (0,_tagMaker__WEBPACK_IMPORTED_MODULE_0__["default"])('main');
+  const main = (0,_tagMaker__WEBPACK_IMPORTED_MODULE_0__["default"])('main', 'menu');
+  main.appendChild(starter);
   main.appendChild(appMenu);
+  main.appendChild(mainm);
   main.appendChild(mainMenu);
 
   return main;
@@ -801,7 +805,9 @@ function mainElement() {
     contact.createDomElement(contacts);
   })
 
-  const main = (0,_tagMaker__WEBPACK_IMPORTED_MODULE_0__["default"])('main');
+  const main = (0,_tagMaker__WEBPACK_IMPORTED_MODULE_0__["default"])('main', 'contacts');
+  const talkToUs = (0,_tagMaker__WEBPACK_IMPORTED_MODULE_0__["default"])('h2', false, 'Talk to Us!');
+  main.appendChild(talkToUs)
   main.appendChild(contacts);
 
   return main;
@@ -952,7 +958,7 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_practice_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
 /* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(17);
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
