@@ -18,7 +18,7 @@ function mainElement() {
   rightSide.appendChild(article);
   rightSide.appendChild(orderLink);
 
-  const main = tagMaker('main');
+  const main = tagMaker('main', 'home');
   main.appendChild(leftSide);
   main.appendChild(rightSide);
 

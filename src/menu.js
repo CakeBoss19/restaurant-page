@@ -23,12 +23,12 @@ function item(name, price, id){
 function getList(){
   let menuArray = [];
 
-  let tomato = item('tomato', 4, 'app');
-  let steak = item('steak', 12, 'main');
-  let yogurt = item('yogurt', 3, 'app');
-  let milkshake = item('milkshake', 6, 'app');
-  let linguini = item('linguini', 14, 'main');
-  let fish = item('fish', 12, 'main');
+  let tomato = item('Tomato', 4, 'app');
+  let steak = item('Steak', 12, 'main');
+  let yogurt = item('Yogurt', 3, 'app');
+  let milkshake = item('Milkshake', 6, 'app');
+  let linguini = item('Linguini', 14, 'main');
+  let fish = item('Fish', 12, 'main');
 
   menuArray.push(tomato);
   menuArray.push(steak);
@@ -43,7 +43,9 @@ function getList(){
 function mainElement() {  
   const appMenu = tagMaker('ul', 'app-menu');
   const mainMenu = tagMaker('ul', 'main-menu');
-  
+  const starter = tagMaker('h2', false, 'Starters');
+  const mainm = tagMaker('h2', false, 'Main Course');
+
   getList().forEach((menuItem) => {
     if(menuItem.id == 'app') {
       menuItem.createDomElement(appMenu);
@@ -52,8 +54,10 @@ function mainElement() {
     }
   });
 
-  const main = tagMaker('main');
+  const main = tagMaker('main', 'menu');
+  main.appendChild(starter);
   main.appendChild(appMenu);
+  main.appendChild(mainm);
   main.appendChild(mainMenu);
 
   return main;

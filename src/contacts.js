@@ -44,7 +44,9 @@ function mainElement() {
     contact.createDomElement(contacts);
   })
 
-  const main = tagMaker('main');
+  const main = tagMaker('main', 'contacts');
+  const talkToUs = tagMaker('h2', false, 'Talk to Us!');
+  main.appendChild(talkToUs)
   main.appendChild(contacts);
 
   return main;

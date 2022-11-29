@@ -6,30 +6,29 @@
   font-style: normal;
 }
 
-html, body, * {
+html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
   font-family: 'Nokora';
-  font-size: 1vw;
+  font-size: 1em;
   box-sizing: border-box;
 }
 
 #content {
-  width: 100%;
+  min-width: 100vw;
   min-height: 100vh;
-  background-color: rgb(42, 53, 51);
+  background-color: rgb(35, 44, 51);
 }
 
-.home-page {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  color: white;
+li {
+  list-style: none;
 }
 
 header {
-  padding: 4rem;
+  background-color: #0E7C7B;
+  padding: 0 2rem;
   display: flex;
   height: 12rem;
   flex-direction: row;
@@ -37,25 +36,30 @@ header {
   align-items: center;
 }
 
-h1 {
-  font-size: 3.5rem;
+header > img {
+  position: fixed;
+  width: 15rem;
+  left: -65px;
+  top: -70px;
 }
 
 .tabs {
   width: 25%;
+  max-width: 350px;
+  height: 25%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 15px;
-  height: 100%;
+
 }
 
 button {
   border-style: none;
   color: white;
-  background-color: transparent;
   flex: 1;
   height: 100%;
-  background-color: rgb(38, 75, 64);;
+  max-width: 100px;
+  background-color: rgb(38, 75, 64);
 }
 
 button:hover {
@@ -64,13 +68,35 @@ button:hover {
 }
 
 main {
-  height: 100%;
+  min-height: auto;
+  max-width: 100vw;
+  display: flex;
+  margin: auto;
+}
+
+main.home {
+  flex: 1;
+  display: flex;
+}
+
+main.menu {
+  flex-direction: column;
+}
+
+.left-main,
+.right-main {
+  margin: auto 2rem;
+  flex: 1;
+}
+
+.left-main > img {
+  width: 100%;
 }
 
 footer {
+  background-color: #0E7C7B;
   height: 8rem;
   width: 100%;
-  position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -80,4 +106,63 @@ footer {
 .copyright {
   font-size: 0.9rem;
   justify-content: center;
+}
+
+.app-menu,
+.main-menu,
+main.contacts {
+  margin:  12px auto;
+  padding: 24px 0;
+  width: 50%;
+  text-align: center;
+  background-color: #17BEBB;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.menu-item {
+  background-color: #D4F4DD;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  padding: 1rem 3rem;
+}
+
+.menu-item > * {
+  padding: 1rem 3rem;
+}
+
+main > h2 {
+  margin: auto;
+  padding: 4rem 2rem 1rem;
+  color:#D4F4DD
+}
+
+.contact-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contact {
+  background-color: #0E7C7B;
+  width: 50%;
+  height: 6rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  padding-top: 12px;
+  flex: 2;
+}
+.job,
+.email {
+  flex: 1;
 }

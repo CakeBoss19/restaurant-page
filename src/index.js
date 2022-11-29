@@ -1,4 +1,4 @@
-import "./styles/practice-style.css";
+import "./styles/style.css";
 import header from "./header";
 import footer from "./footer";
 import * as Home from "./home";
