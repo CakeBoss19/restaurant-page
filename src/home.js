@@ -1,5 +1,5 @@
 import tagMaker from "./tagMaker";
-import Background from './shrimp-portrait.jpg';
+import Background from './images/shrimp-portrait.jpg';
 
 function mainElement() {  
   console.log('home page');

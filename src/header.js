@@ -1,5 +1,5 @@
 import tagMaker from "./tagMaker";
-import Icon from './logo.png';
+import Icon from './images/logo.png';
 
 export default function header() {
   const myIcon = new Image();
